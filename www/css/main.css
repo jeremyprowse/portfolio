@@ -1,0 +1,854 @@
+/* ==========================================================================
+   Custom Styles for Jeremy Prowse's Portfolio
+   ========================================================================== */
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Preloader
+   ========================================================================== */
+
+body {
+    display: none;
+}
+
+#jpreOverlay {
+    background-color: rgb(240, 240, 240);
+}
+
+#jpreLoader {
+    width: 100%;
+    height: 4px;
+}
+
+#jpreBar {
+    width: 100%;
+    height: 4px;
+    background: rgb(10, 108, 155);
+}
+
+
+/* ==========================================================================
+   Initialize
+   ========================================================================== */
+
+@font-face {
+    font-family: 'TitilliumText25L250wt';
+    src: url('../fonts/TitilliumText25L004-webfont.eot');
+    src: url('../fonts/TitilliumText25L004-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText25L004-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText25L004-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText25L004-webfont.svg#../fonts/TitilliumText25L250wt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
+    text-decoration: none;
+    font: 1em/1.5em 'TitilliumText25L250wt', 'century gothic', sans;
+}
+
+p {
+    font: 1em/1.5em 'TitilliumText25L250wt', 'century gothic', sans;
+    color: rgb(40, 40, 40);
+    margin: 0;
+}
+
+h1, h2 {
+    font: 2em 'TitilliumText25L250wt', 'century gothic', sans;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(65, 65, 65);
+    margin-bottom: 100px;
+}
+
+.content {
+    position: relative;
+    top: 100px;
+}
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+nav {
+    width: 100%;
+    height: 100px;
+    background: rgb(250, 250, 250);
+    position: fixed;
+    z-index: 100;
+}
+
+.flip {
+    width: 75px;
+    height: 76px;
+    margin: 12px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.logo, .back-to-top {
+    width: 75px;
+    height: 76px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.back-to-top {
+    margin-top: 38px;
+    height: 0;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+    width: 100%;
+    height: 800px;
+    background: url('../img/header-bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.tagline {
+    width: 100%;
+    margin: 20% auto;
+}
+
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+.about {
+    width: 90%;
+    max-width: 960px;
+    margin: 320px auto 0 auto;
+}
+
+.profile {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    padding-top: 20px;
+    border-top: 1px solid rgb(40, 40, 40);
+}
+
+img.my-profile {
+    width: 100%;
+}
+
+.bio {
+    width: 65%;
+    float: left;
+    padding-top: 20px;
+    border-top: 1px solid rgb(40, 40, 40);
+}
+
+.bio img {
+    margin-top: 20px;
+}
+
+.icons {
+    position: relative;
+    height: 24px;
+    margin-bottom: 20px;
+}
+
+img.icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ==========================================================================
+   Work
+   ========================================================================== */
+
+.work {
+    width: 100%;
+    margin: 220px 0;
+    padding: 100px 0;
+    background: rgb(245, 250, 250);
+}
+
+.project {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img.tech-icon {
+    left: 35%;
+}
+
+img.dev-icon {
+    left: 70%;
+}
+
+.website {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.launch, .launch-mobile {
+    width: 30%;
+    height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    background: rgb(40, 40, 40);
+    left: 35%;
+    position: absolute;
+    z-index: 20;
+}
+
+.launch {
+    top: 38%;
+}
+
+.launch:active {
+    color: rgb(40, 40, 40);
+    background: rgb(240, 240, 240);
+}
+
+.launch-mobile {
+    height: 20px;
+    padding: 10px 0;
+    margin-top: 20px;
+    display: none;
+}
+
+.mask {
+    width: 650px;
+    height: 400px;
+    margin: 0 auto;
+    background: url('../img/macbook.png');
+    background-size: cover;
+}
+
+img.screenshot {
+    width: 445px;
+    margin: 27px auto;
+    display: block;
+}
+
+.overview, .tech, .device {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    padding-top: 20px;
+    border-top: 1px solid rgb(40, 40, 40);
+}
+
+.device {
+    margin-right: 0;
+}
+
+.devices {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.next-btn, .prev-btn {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    background: rgb(40, 40, 40);
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+
+/* ==========================================================================
+   Skills
+   ========================================================================== */
+
+.skills {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.skill {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    margin-bottom: 100px;
+}
+
+.skill:nth-child(3n+1) {
+    margin-right: 0;
+}
+
+.skill img {
+    width: 100%;
+}
+
+.full {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background: rgb(200, 200, 200);
+}
+
+.nine, .eight, .seven {
+    width: 90%;
+    height: 4px;
+    background: rgb(10, 108, 155);
+}
+
+.eight {
+    width: 80%;
+}
+
+.seven {
+    width: 70%;
+}
+
+.skill p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   Infographic
+   ========================================================================== */
+
+.infographic {
+    width: 80%;
+    max-width: 660px;
+    margin: 220px auto 320px auto;
+}
+
+.infographic img {
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   Map & Contact
+   ========================================================================== */
+
+.map {
+    position: relative;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.map-dissable {
+    width: 100%;
+    height: 500px;
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.contact-form {
+    width: 80%;
+    height: 180px;
+    top: 280px;
+    left: 10%;
+    position: absolute;
+    z-index: 20;
+}
+
+form {
+    width: 100%;
+}
+
+input, textarea {
+    width: 96%;
+    margin: 10px 0;
+    border: none;
+    padding: 2%;
+    background: rgb(40, 40, 40);
+    color: rgb(250, 250, 250);
+    font: 1em/1.5em 'TitilliumText25L250wt', 'century gothic', sans;
+}
+
+textarea {
+    height: 80px;
+    float: left;
+    resize: none;
+}
+
+.left {
+    width: 47.5%;
+    margin-right: 5%;
+    float: left;
+}
+
+.right {
+    width: 47.5%;
+    float: left;
+}
+
+#submit, #reset {
+    width: 49%;
+    border: none;
+    float: right;
+    color: rgb(250, 250, 250);
+    background: rgb(40, 40, 40);
+}
+
+#submit {
+    margin-left: 2%;
+}
+
+#status {
+    width: 98%;
+    padding: 1%;
+    display: block;
+    color: rgb(240, 240, 240);
+    background: rgb(230, 150, 75);
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    width: 100%;
+    height: 400px;
+}
+
+.flip-li, .flip-cv {
+    width: 180px;
+    height: 40px;
+    margin: 60px auto 0 auto;
+    position: relative;
+}
+
+.flip-cv {
+    margin-top: 20px;
+}
+
+.li-front, .cv-front, .li-back, .cv-back {
+    width: 100%;
+    height: 40px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background: url('../img/li-front.png');
+    background-position: center center;
+}
+
+.li-back {
+    background: url('../img/li-back.png');
+    background-position: center center;
+}
+
+.cv-front {
+    background: url('../img/cv-front.png');
+    background-position: center center;
+}
+
+.cv-back {
+    background: url('../img/cv-back.png');
+    background-position: center center;
+}
+
+.li-back, .cv-back {
+    margin-top: 20px;
+    height: 0;
+}
+
+.flip-profile {
+    width: 47.5%;
+    margin: 20px 0 0 5%;
+    float: left;
+    overflow: hidden;
+}
+
+.flip-li {
+    margin-left: auto;
+}
+
+.flip-profile img {
+    margin-left: -22.5%;
+}
+
+.contact {
+    width: 200px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+/* ==========================================================================
+   ie Styles
+   ========================================================================== */
+
+.lt-ie9 .skill {
+    margin: 0 1% 100px 1%;
+}
+
+.lt-ie7 nav, .lt-ie7 .content {
+    display: none;
+}
+
+.ie-message {
+    width: 70%;
+    height: 400px;
+    margin: 200px auto;
+    background: rgb(240, 240, 240);
+}
+
+.ie-message .logo-ie {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 100px auto 20px auto;
+}
+
+.ie-message h1 {
+    color: rgb(40, 40, 40);
+}
+
+.new-browsers {
+    width: 70%;
+    margin: 50px auto;
+    padding: 0;
+}
+
+.new-browsers li {
+    width: 28%;
+    margin-left: 2%;
+    float: left;
+}
+
+.new-browsers li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: rgb(40, 40, 40);
+    color: rgb(240, 240, 240);
+}
+
+.new-browsers li a:hover {
+    background: rgb(10, 108, 155);;
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1500px), only screen and (max-device-width: 1500px) and (min-device-width: 1500px) and (orientation: landscape) {
+
+    .header {
+        height: 600px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) and (min-device-width: 1024px) and (orientation: landscape) {
+
+    .tagline {
+        margin-top: 30%;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) and (min-device-width: 800px) and (orientation: landscape) {
+
+    .header {
+        height: 300px;
+        background: url('../img/header-bg-1024.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .tagline {
+        margin-top: 20%;
+    }
+
+    .about, .project, .work, .infographic {
+        margin: 50px auto;
+    }
+
+    .work {
+        padding: 50px 0 10px 0;
+    }
+
+    .website {
+        height: 280px;
+    }
+
+    .launch {
+        top: 35%;
+    }
+
+    .mask {
+        width: 450px;
+        height: 275px;
+    }
+
+    img.screenshot {
+        width: 307px;
+        margin: 18px auto;
+    }
+
+    .next-btn, .prev-btn {
+        top: 40%;
+    }
+
+    .lt-ie9 .mask {
+        background: none;
+    }
+
+    .lt-ie9 .launch {
+        top: 45%;
+    }
+
+    .lt-ie9 img.screenshot {
+        width: 400px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) and (min-device-width: 600px) and (orientation: landscape) {
+
+    .header {
+        background: url('../img/header-bg-600.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .tagline {
+        width: 60%;
+    }
+
+    .about, .project, .skills, .project, .infographic {
+        width: 70%;
+    }
+
+    .profile, .bio {
+        width: 100%;
+    }
+
+    .profile {
+        margin-bottom: 30px;
+    }
+
+    .website {
+        height: 190px;
+    }
+
+    .launch {
+        top: 30%;
+    }
+
+    .mask {
+        width: 300px;
+        height: 185px;
+    }
+
+    img.screenshot {
+        width: 210px;
+        margin: 10px auto;
+    }
+
+    .next-btn, .prev-btn {
+        width: 49%;
+        top: 8%;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .overview, .tech, .device {
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+
+    .devices {
+        width: 50%;
+    }
+
+    .skill {
+        width: 47.5%;
+    }
+
+    .skill:nth-child(3n+1) {
+        margin-right: 5%;
+    }
+
+    .skill:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .contact-form {
+        top: 200px;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .lt-ie9 img.screenshot {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 480px) and (orientation: landscape) {
+
+    .tagline {
+        margin: 30% auto;
+        width: 90%;
+    }
+
+    .about, .project, .skills, .project, .infographic {
+        width: 90%;
+    }
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
